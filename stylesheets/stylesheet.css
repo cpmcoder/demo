@@ -51,7 +51,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #212121;
+  background: #f2f2f2;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -170,9 +170,42 @@ pre, code {
   -webkit-border-radius: 2px;
 }
 
+.main_example_wrapper {
+	background-color: black;
+        color : #00ff00;
+}
+
+.main_example {
+	font-size: 1.5em;
+	background-color: black;
+        color : #00ff00;
+	font-weight: bold;
+	text-align: center;
+}
+
+.main_example2 {
+	font-size: 1.2em;
+	background-color: black;
+        color : #00ff00;
+	font-weight: bold;
+	text-align: center;
+}
+
+.code_example_wrapper {
+	background-color: black;
+        color : #00D000;
+}
+
+.code_example {
+	background-color: black;
+        color : #00D000;
+	font-weight: bold;
+	text-align: left;
+}
+
 pre {
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
 }
@@ -201,14 +234,12 @@ ul, ol, dl {
 }
 
 ul {
-  list-style-position: inside;
-  list-style: disc;
+  list-style: inside;
   padding-left: 20px;
 }
 
 ol {
-  list-style-position: inside;
-  list-style: decimal;
+  list-style: decimal inside;
   padding-left: 20px;
 }
 
@@ -266,7 +297,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 960px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -317,7 +348,7 @@ Full-Width Styles
 
 #downloads {
   position: absolute;
-  width: 210px;
+  width: 630px;
   z-index: 10;
   bottom: -40px;
   right: 0;
@@ -346,6 +377,51 @@ Full-Width Styles
   margin-left: 10px;
 }
 
+.rpm_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download3.png) no-repeat bottom left;
+  margin-left: 10px;
+}
+
+.deb_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download4.png) no-repeat bottom left;
+  margin-left: 10px;
+}
+
+
+.executable_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download3.png) no-repeat bottom right;
+  margin-left: 10px;
+}
+
+.windows_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download4.png) no-repeat bottom right;
+  margin-left: 10px;
+}
+
 .zip_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
 }
@@ -354,20 +430,94 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
+.rpm_download_link:hover {
+  background: url(../images/sprite_download3.png) no-repeat top left;
+}
+
+.deb_download_link:hover {
+  background: url(../images/sprite_download4.png) no-repeat top left;
+}
+
+
+.executable_download_link:hover {
+  background: url(../images/sprite_download3.png) no-repeat top right;
+}
+
+.windows_download_link:hover {
+  background: url(../images/sprite_download4.png) no-repeat top right;
+}
+
+
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  border-top: 0px solid #111;
+  border-bottom: 0px solid #111;
+  float: left;
+  width: 75%;
 }
 
 #main_content {
   padding-top: 40px;
 }
 
+#q-logo {
+	float:right;
+	border: none;
+	padding: 0px;
+	margin: 10px 0 10px 0;
+	border: none;
+	box-shadow: 0 0;
+	width:15%;
+	height:auto;
+}
+
+#sidenav {
+  background: #f2f2f2;
+  float:left;
+  width: 25%;
+  font-size: 0.9em;
+  color: #003;
+  float: left;
+  padding: 15px 15px 5px 25px;
+  width: 180px;
+  #background: none repeat scroll 0 0 #f5f8fa;
+  margin: 0 0 20px 0;
+}
+
+#sidenav h1 {
+  color: #000;
+  font-size: 1em;
+  padding: 0;
+  margin-top: 0.8em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #a3afb6;
+}
+
+#sidenav ul {
+  margin: 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidenav li {
+  border-bottom: 1px solid #e6ebed; 
+  margin: 0.2em 0;
+  padding: 0;
+}
+
+#sidenav li a {
+  margin: 0;
+  text-decoration:none;
+}
+
+#sidenav li a:hover {
+  color: #193240;
+  background: none;
+}
+
 #footer_wrap {
   background: #212121;
 }
-
 
 
 /*******************************************************************************
@@ -423,3 +573,4 @@ Small Device Styles
   }
 
 }
+
